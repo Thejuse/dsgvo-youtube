@@ -1,0 +1,71 @@
+/*
+ *
+ *  dsgvo-youtube
+ *  https://github.com/Thejuse/dsgvo-youtube
+ *  Version: 1.0.0
+ *  MIT-Licence
+ *
+ */
+ 
+.youtube-video-container.video-activated .preview-box {
+  display: none;
+}
+.youtube-video-container .preview-box {
+  height: 360px;
+  width: 640px;
+  position: relative;
+}
+.youtube-video-container .preview-box .image {
+  height: 360px;
+  width: 640px;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.youtube-video-container .preview-box .overlay {
+  background-color: rgba(256, 256, 256, 0.9);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.1s linear;
+}
+.youtube-video-container .preview-box .overlay p {
+  color: #000000;
+  font-family: Arial;
+  font-size: 18px;
+}
+.youtube-video-container .preview-box .overlay a {
+  color: #1068ae;
+  font-family: Arial;
+  font-size: 18px;
+}
+.youtube-video-container .preview-box .overlay:hover {
+  opacity: 1;
+}
+.youtube-video-container .display-table {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+.youtube-video-container .display-table .display-table-cell {
+  display: table-cell;
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+  text-align: center;
+}
+.youtube-video-container .display-table .display-table-cell.left {
+  text-align: left;
+}
+.youtube-video-container .display-table .display-table-cell.right {
+  text-align: right;
+}
+.youtube-video-container .display-table .display-table-cell.top {
+  vertical-align: top;
+}
+.youtube-video-container .display-table .display-table-cell.bottom {
+  vertical-align: bottom;
+}

@@ -1,0 +1,87 @@
+/*
+ *
+ *  dsgvo-youtube
+ *  https://github.com/Thejuse/dsgvo-youtube
+ *  Version: 1.0.0
+ *  MIT-Licence
+ *
+ */
+ 
+@ytvid-width: 640px;
+@ytvid-height: 360px;
+@ytvid-overlay-color: rgba(256, 256, 256, 0.9);
+@ytvid-font-family: Frutiger;
+@ytvid-font-size: 18px;
+@ytvid-color-p: #000000;
+@ytvid-color-a: #1068ae;
+
+.youtube-video-container{
+    &.video-activated{
+        .preview-box{
+            display: none;
+        }
+    }
+    .preview-box{
+        height: @ytvid-height;
+        width: @ytvid-width;
+        position: relative;
+        .image{
+            height: @ytvid-height;
+            width: @ytvid-width;
+            background-position: center center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .overlay{
+            background-color: @ytvid-overlay-color;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: 0.1s linear;
+            p{
+                color: @ytvid-color-p;
+                font-family: @ytvid-font-family;
+                font-size: @ytvid-font-size;
+            }
+            a{
+                color: @ytvid-color-a;
+                font-family: @ytvid-font-family;
+                font-size: @ytvid-font-size;
+            }
+            &:hover{
+                opacity: 1;
+            }
+        }
+    }
+    .video-box{
+
+    }
+
+    .display-table {
+        display: table;
+        width: 100%;
+        height: 100%;
+        .display-table-cell {
+            display: table-cell;
+            width: 100%;
+            height: 100%;
+            vertical-align: middle;
+            text-align: center;
+            &.left {
+                text-align: left;
+            }
+            &.right {
+                text-align: right;
+            }
+            &.top {
+                vertical-align: top;
+            }
+            &.bottom {
+                vertical-align: bottom;
+            }
+        }
+    }
+}
