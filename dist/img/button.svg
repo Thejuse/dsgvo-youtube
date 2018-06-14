@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="68px" height="48px" viewBox="0 0 68 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>yt-button</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="yt-button" fill-rule="nonzero">
+            <path d="M66.52,7.74 C65.74,4.81 64.03,2.33 61.1,1.55 C55.79,0.13 34,0 34,0 C34,0 12.21,0.13 6.9,1.55 C3.97,2.33 2.27,4.81 1.48,7.74 C0.06,13.05 0,24 0,24 C0,24 0.06,34.95 1.48,40.26 C2.26,43.19 3.97,45.67 6.9,46.45 C12.21,47.87 34,48 34,48 C34,48 55.79,47.87 61.1,46.45 C64.03,45.67 65.74,43.19 66.52,40.26 C67.94,34.95 68,24 68,24 C68,24 67.94,13.05 66.52,7.74 Z" id="Shape" fill-opacity="0.8" fill="#212121"></path>
+            <polyline id="Shape" fill="#FFFFFF" points="45 24 27 14 27 34"></polyline>
+        </g>
+    </g>
+</svg>
