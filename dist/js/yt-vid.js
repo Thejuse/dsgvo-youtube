@@ -7,7 +7,7 @@
  *
  */
 
-var getUrlParameter = function getUrlParameter(sParam, url) {
+function getUrlParameter(sParam, url) {
     var sPageURL = decodeURIComponent(url),
         sURLVariables = sPageURL.split('?'),
         sParameterName,
@@ -25,9 +25,9 @@ var getUrlParameter = function getUrlParameter(sParam, url) {
 function videoDoubleClick() {
     $('.vid-overlay').on('click', function(e){
         e.preventDefault();
-        var elementID = $(this).attr('class').replace('vid-overlay', '').replace('vid-overlay-', '#vid-');
-        var videoURL = $(elementID).data('videourl');
-        var videoID = getUrlParameter('v', videoURL);
+        const elementID = $(this).attr('class').replace('vid-overlay', '').replace('vid-overlay-', '#vid-');
+        const videoURL = $(elementID).data('videourl');
+        const videoID = getUrlParameter('v', videoURL);
 
         $(elementID).find('.video-box').html('<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/' + videoID + '" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>');
         $(elementID).addClass('video-activated');
@@ -35,8 +35,8 @@ function videoDoubleClick() {
 }
 function videoIMG() {
     $('.youtube-video-container').each(function(){
-        var videoURL = $(this).data('videourl');
-        var videoID = getUrlParameter('v', videoURL);
+        const videoURL = $(this).data('videourl');
+        const videoID = getUrlParameter('v', videoURL);
 
         $(this).find('.image').css('background-image', 'url("https://i.ytimg.com/vi/' + videoID + '/maxresdefault.jpg")');
     });
